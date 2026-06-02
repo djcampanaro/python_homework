@@ -49,7 +49,7 @@ last_two = more_employees.tail(2)
 employee_shape = more_employees.shape
 
 # Part 4: Use the info() method
-print(more_employees.info())
+more_employees.info()
 
 
 # Task 4: Data Cleaning

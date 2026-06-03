@@ -58,5 +58,5 @@ print(df)
 
 df.to_csv('get_books.csv', index=False)
 get_books_json = json.dumps(results, indent=4)
-with open('get_books.json', 'a') as json_file:
+with open('get_books.json', 'w') as json_file:
     json_file.write(get_books_json)

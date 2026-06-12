@@ -2,7 +2,7 @@ import sqlite3
 
 def create_publisher(cursor, name):
     try:
-        cursor.execute("INSERT INTO publishers (publisher_name) VALUES (?)", (name))
+        cursor.execute("INSERT INTO publishers (publisher_name) VALUES (?)", (name,))
     except sqlite3.IntegrityError:
         print(f"{name[0]} is already in the database.")
 

@@ -1,0 +1,15 @@
+function: no_returns
+positional parameters: None
+keyword paramenters: None
+result: None
+
+function: returns_true
+positional parameters: [3, 'and', 7]
+keyword paramenters: None
+result: True
+
+function: returns_decorator
+positional parameters: None
+keyword paramenters: {'a': 5, 'b': 'okay', 'c': (90, 4)}
+result: <function logger_decorator at 0x1030cd8a0>
+

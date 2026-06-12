@@ -1,0 +1,11 @@
+I'm testing the diary program 
+hopefully it is functioning as it should 
+if so all of these inputs will be on different lines 
+done for now 
+
+this is a second entry in the diary 
+things and such and happenstance 
+other nondescript things happening 
+more other things that happened 
+done for now 
+

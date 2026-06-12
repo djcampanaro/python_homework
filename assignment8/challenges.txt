@@ -1,0 +1,7 @@
+One of the challenges I faced during this assignment was completing the optional task of retrieving the list of all books 
+by navigating through the site. I kept running into the exception where the element wasn't found. I added the exception 
+and a try block. The exception would break the loop after the second page. So, I added the sleep timer around the click.
+
+For task 6, I ran into an issue where the list index was out of range. I had created an XPATH to look for the parent 
+element before searching for 'li a' elements. This also pulled in links from a previous unordered list. I adjusted the 
+path to look for the next ordered list sibling before finding the name/link variables.

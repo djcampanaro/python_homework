@@ -1,0 +1,10 @@
+Wikipedia restricts access to the administration sections of the site. There is also a restriction to copyrighted 
+material as well as the spam black list.
+
+For some user agents they ask for longer delays and minimums for requests per second. They also ask that dynamically 
+generated pages not be crawled.
+
+One of the purposes of robots.txt files is to promote equal access to sites. Preventing bots from spamming requests 
+allows the site to function at a predictable and easier to maintain level. In turn people using the site in a normal 
+browser will not find disruption as they navigate the pages, and other people using a scraper in an ethical way will 
+have equal access to the information.

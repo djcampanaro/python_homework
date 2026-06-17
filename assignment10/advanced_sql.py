@@ -28,6 +28,7 @@ FROM orders AS o
 JOIN line_items AS li ON li.order_id = o.order_id
 JOIN products AS p ON p.product_id = li.product_id
 GROUP BY o.order_id
+ORDER BY o.order_id
 LIMIT 5
 """
 
@@ -36,7 +37,7 @@ run_query(query, cur, full_row=True)
 # Task 2: Understanding Subqueries
 
 query = """
-SELECT customer_name, ROUND(AVG(t.total_price)) AS avg_total_price
+SELECT customer_name, ROUND(AVG(t.total_price)) AS average_total_price
 FROM customers AS c
 LEFT JOIN (
     SELECT customer_id AS customer_id_b, ROUND(SUM(p.price * li.quantity), 2) AS total_price
@@ -46,7 +47,7 @@ LEFT JOIN (
     GROUP BY o.order_id
     ) AS t
 ON t.customer_id_b = c.customer_id
-GROUP BY customer_id;
+GROUP BY c.customer_id;
 """
 
 run_query(query, cur, full_row=True)
